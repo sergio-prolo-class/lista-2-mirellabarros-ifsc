@@ -4,8 +4,8 @@ import edu.princeton.cs.algs4.Draw;
 
 public class Grade {
 
-    private int x;
-    private int y;
+    private int x = 0;
+    private int y = 0;
 
     public Grade(int x, int y) {
         this.x = x;
@@ -34,10 +34,11 @@ public class Grade {
         }
     }
 
-    public int[] posicao() {
-        int[] posicao = new int[2];
-        posicao[0] = this.x;
-        posicao[1] = this.y;
-        return posicao;
+    public int getX() {
+        return this.x;
+    }
+
+    public int getY() {
+        return this.y;
     }
 }
