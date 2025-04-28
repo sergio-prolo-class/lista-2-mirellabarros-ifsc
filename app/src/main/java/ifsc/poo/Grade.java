@@ -15,10 +15,10 @@ public class Grade {
 
         int numeros = 0; // Inicia a contagem em 0
         char letra = 65; // Inicia a contagem em A
+        draw.setPenColor(153, 0, 0);
 
         // Acrescenta as letras e números à grade
         for (int i=40; i<=400; i+=40) {
-            draw.setPenColor(153, 0, 0);
             draw.text(x+i,y,Integer.toString(numeros));
             draw.text(x,y+i,Character.toString(letra));
             numeros++;
