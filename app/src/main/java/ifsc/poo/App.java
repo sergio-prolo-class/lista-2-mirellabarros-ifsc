@@ -19,8 +19,12 @@ public class App {
 
     public static void main(String[] args) {
         App app = new App();
-        Grade grade = new Grade();
-        grade.desenhar(app.draw, 200, 100);
+        Grade grade = new Grade( 200, 100);
+        grade.desenhar(app.draw);
+        Navio navio1 = new Navio();
+        navio1.desenhar(app.draw, grade.posicao() ,5, 3, 'C', 'V');
+        Navio navio2 = new Navio();
+        navio2.desenhar(app.draw, grade.posicao() ,2, 1, 'I', 'H');
         app.draw.show();
     }
 }
