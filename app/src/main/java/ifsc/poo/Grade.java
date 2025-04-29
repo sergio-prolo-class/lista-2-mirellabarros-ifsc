@@ -8,8 +8,13 @@ public class Grade {
     private int y = 0;
 
     public Grade(int x, int y) {
-        this.x = x;
-        this.y = y;
+        if (x >= 80 && y >=80) {
+            this.x = x;
+            this.y = y;
+        } else {
+            this.x = 80;
+            this.y = 80;
+        }
     }
 
     public void desenhar(Draw draw) {
